@@ -1,0 +1,105 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block assignmenu %}open active {% endblock %}
+{% block routoveh %} active {% endblock %}
+{% block body %}
+
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Assignment/</span> Rout to vehicle</h4>
+
+    <!--Basic with Icons -->
+    
+      <!-- Basic with Icons -->
+      <div class="col-xxl">
+        <div class="card mb-4">
+          <div class="card-header d-flex align-items-center justify-content-between">
+            <h5 class="mb-0">ROUTE TO VEHICLE</h5>
+            <small class="text-muted float-end"><!--add example text optional pushpa --></small>
+          </div>
+          <div class="card-body">
+            <form>
+              
+              
+
+              
+
+
+              <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label" for="basic-icon-default-company">select route</label>
+                  <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                          <span id="basic-icon-default-company2" class="input-group-text"
+                            ><i class="bx bx-map-pin"></i
+                          ></span>
+                          
+                          <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                              
+                            <option selected>select route</option>
+                            <option value="1">route1</option>
+                            <option value="2">route2</option>
+                            <option value="3">route3</option>
+                          </select>
+                        </div>
+                 
+                </div>                         
+              </div>
+
+              <div class="row mb-3">
+                <label class="col-sm-2 col-form-label" for="basic-icon-default-company">select vehicle</label>
+                <div class="col-sm-10">
+                    <div class="input-group input-group-merge">
+                        <span id="basic-icon-default-company2" class="input-group-text"
+                          ><i class="bx bx-car"></i
+                        ></span>
+                        
+                        <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                            
+                          <option selected>select catagory</option>
+                          <option value="1">catagory1</option>
+                          <option value="2">catagory2</option>
+                          <option value="3">catagory3</option>
+                        </select>
+                      </div>
+               
+              </div>                         
+            </div>
+
+
+            <div class="mb-3 row">
+              <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Date & time</label>
+              <div class="col-sm-10">
+                <input
+                  class="form-control"
+                  type="datetime-local"
+                  value="2021-06-18T12:30:00"
+                  id="html5-datetime-local-input"
+                />
+              </div>
+            </div>
+
+
+             
+
+
+ 
+
+
+              
+              
+
+
+              <div class="row justify-content-end">
+                <div class="col-sm-10">
+                  <button type="submit" class="btn btn-primary">Assign</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+{% endblock %}

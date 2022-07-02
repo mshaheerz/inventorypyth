@@ -1,0 +1,113 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block regmenu %} open active{% endblock %}
+{% block stockreg %} active {% endblock %}
+{% block stylesheets %}    
+ <link rel="stylesheet" href="{% static '/css/multiselect.css' %}" />
+{% endblock %}
+{% block body %}
+
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Registration/</span> stock</h4>
+
+    <!--Basic with Icons -->
+    
+      <!-- Basic with Icons -->
+      <div class="col-xxl">
+        <div class="card mb-4">
+          <div class="card-header d-flex align-items-center justify-content-between">
+            <h5 class="mb-0">ADD STOCK</h5>
+            <small class="text-muted float-end"><!--add example text optional pushpa --></small>
+          </div>
+          <div class="card-body">
+            <form>
+            
+
+             
+              <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Ware house</label>
+                  <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                          <span id="basic-icon-default-company2" class="input-group-text"
+                            ><i class="bx bx-store"></i
+                          ></span>
+                          
+                          <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                              
+                            <option selected>select ware house</option>
+                            <option value="1">option1</option>
+                            <option value="2">opt2</option>
+                            <option value="3">opt3</option>
+                            <option value="3">opt4</option>
+                            <option value="3">opt5</option>
+                            <option value="3">opt6</option>
+                          </select>
+                        </div>
+                 
+                </div>                         
+              </div>
+
+
+
+              
+              <div class="mb-3 row ">
+                <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Item
+                    & quantity</label>
+
+
+
+
+                    <div class="dropdown col-sm-10">
+                        <input type="text" id="droptxt" class="list" readonly>
+                            <div id="content" class="content col-sm-10 ">
+                                <div class="list  ">
+                                    <input type="checkbox" id="item1" class=" list" value="item1" />
+                                    <label for="apple" class="list">Item 1 </label>
+                                    <input type="hidden" class="list quantity col-sm-9" min="1" value="1" />
+                                </div>
+                                <div class="list  ">
+                                    <input type="checkbox" id="item3" class="list" value="item2" />
+                                    <label for="apple" class="list">Item 2 </label>
+                                    <input type="hidden" class="list quantity col-sm-9" min="1" value="1" />
+                                </div>
+                                <div class="list  ">
+                                    <input type="checkbox" id="item4" class="list" value="item3" />
+                                    <label for="apple" class="list">Item 3 </label>
+                                    <input type="hidden" placeholder="QUANTITY" class="list quantity col-sm-9" min="1" value="1" />
+                                </div>
+                            </div>
+                        </div>
+                        <script src="../assets/js/myscript.js"></script>
+
+
+
+
+                    
+
+
+
+
+
+
+
+             
+            </div>
+
+
+             
+             
+
+
+
+              <div class="row justify-content-end">
+                <div class="col-sm-10">
+                  <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
